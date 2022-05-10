@@ -49,28 +49,59 @@ generateStars(800);
 
 
 
+function countdown() {
+    let dayStr;
+    let hourStr;
+    let inputMin;
+    let inputSec;
+    const timeSpan = new Date("July 1,2022 00:00:00").getTime() - new Date().getTime();
 
+    // 1day = 86400000 milisec
+    if((Math.floor(timeSpan / 86400000)).toString().length < 2){
+        dayStr = "0" + (Math.floor(timeSpan / 86400000)).toString();
+    }
+    else{
+        dayStr = (Math.floor(timeSpan / 86400000)).toString();
+    }
+    //  1hour = 3600000 milisec
+    if((Math.floor((timeSpan % 86400000) / 3600000)).toString().length < 2){
+        hourStr = "0" + (Math.floor((timeSpan % 86400000) / 3600000)).toString();    
+    }
+    else{
+        hourStr = (Math.floor((timeSpan % 86400000) / 3600000)).toString();    
+    }
+    //   1minute = 60000 milisec
+    if((Math.floor((Math.floor((timeSpan % 3600000) / 60000)).toString().length < 2))){
+        inputMin = "0" + (Math.floor((timeSpan % 3600000) / 60000)).toString();
+    }
+    else{
+        inputMin = (Math.floor((timeSpan % 3600000) / 60000)).toString();
+    }
+    if((Math.floor((Math.floor((timeSpan % 60000) / 1000)).toString().length < 2))){
+        inputSec = "0" + (Math.floor((timeSpan % 60000) / 1000)).toString();
+    }
+    else{
+        inputSec = (Math.floor((timeSpan % 60000) / 1000)).toString();
+    }
+    // dayStr = (Math.floor(timeSpan / 86400000)).toString();
+    // hourStr = (Math.floor((timeSpan % 86400000) / 3600000)).toString();
+    // inputMin = (Math.floor((timeSpan % 3600000) / 60000)).toString();
+    // inputSec = (Math.floor((timeSpan % 60000) / 1000)).toString();
+    $(".lauching-timer ul ").each((ind,item) => {
+        $(item).html("")
+    })
+    for (i = 0; i < dayStr.length; i++) {
+        $(".days ul").append("<li>" + dayStr.substring(i, (i + 1)) + "</li>")
+    }
+    for (i = 0; i < hourStr.length; i++) {
+        $(".hours ul").append("<li>" + hourStr.substring(i, (i + 1)) + "</li>")
+    }
+    for (i = 0; i < inputMin.length; i++) {
+        $(".minutes ul").append("<li>" + inputMin.substring(i, (i + 1)) + "</li>")
+    }
+    for (i = 0; i < inputSec.length; i++) {
+        $(".seconds ul").append("<li>" + inputSec.substring(i, (i + 1)) + "</li>")
+    }
+}
 
-
-
-
-
-
-
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function () {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
+setInterval(countdown, 1000);

@@ -25,10 +25,27 @@ $page = 'home';
                 <div class="col-xl-11 col-12">
                     <div class="timer-wrapper">
                         <div class="lauching-time">
-                            <h6>launching on</h6>
-                            <h1>july 1st 2022</h1>
+                            <h4>launching on</h4>
+                            <h3>july 1st 2022</h3>
                         </div>
-                        
+                        <div class="lauching-timer">
+                            <div class="days">
+                                <ul></ul>
+                                <h5>Days</h5>
+                            </div>
+                            <div class="hours">
+                                <ul></ul>
+                                <h5>hours</h5>
+                            </div>
+                            <div class="minutes">
+                                <ul></ul>                                
+                                <h5>Minutes</h5>
+                            </div>
+                            <div class="seconds">
+                                <ul></ul>
+                                <h5>Seconds</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
