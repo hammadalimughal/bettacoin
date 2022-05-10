@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,48 +7,255 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
 body {
     overflow-x: hidden;
+    background-color: #000;
 }
+
 a {
     text-decoration: none;
 }
+
 figure {
     margin: 0;
     padding: 0;
 }
+
 .btn:focus {
     outline: none;
 }
+
 ul,
 ol {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-h1,h2,h3,h4,h5,h6,p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
-a,button{
+
+a,
+button {
     display: inline-block;
 }
+
 button:focus {
     outline: none;
     box-shadow: none;
 }
+
 .btn:focus {
     outline: none;
     box-shadow: none;
 }
+
 .form-control:focus {
     outline: none;
     box-shadow: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 /************************** Header css **************************/
+.header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-main .navbar-custom {
+    padding: 25px 8px;
+}
+
+.header-main .navbar-custom .navbar-brand {
+    display: block;
+    width: 90px;
+}
+
+.header-main .navbar-custom .custom-nav .nav-item .nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 6px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.header-main .navbar-custom .how-to-buy {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #000;
+    background: linear-gradient(20deg, rgba(221, 184, 87, 1) 0%, rgba(166, 112, 36, 1) 25%, rgba(232, 201, 99, 1) 50%, rgba(138, 89, 26, 1) 75%, rgba(197, 174, 89, 1) 100%);
+    text-transform: capitalize;
+    padding: 7px 28px;
+    border-radius: 30px;
+}
+
 /************************** Header css end **************************/
 
+/* banner css  */
+.home-banner-main {
+    padding: 200px 0 0;
+}
+
+.home-banner-main .banner-content{
+    position: relative;
+    z-index: 20;
+}
+.home-banner-main .banner-content h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+}
+
+.home-banner-main .banner-content h1 span {
+    position: relative;
+    top: -5px;
+    display: block;
+    font-size: 78px;
+    font-weight: 900;
+    background: linear-gradient(0deg, rgba(230, 197, 100, 1) 0%, rgb(139, 107, 42) 25%, rgba(236, 207, 105, 1) 50%, rgb(139, 106, 45) 75%, rgba(235, 222, 122, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-banner-main .banner-content .coin-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 200px;
+    margin-top: -115px;
+    z-index: 1;
+}
+
+.home-banner-main .banner-content .coin-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22px;
+    height: 85px;
+    background-image: url(../images/coin-shadow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+.home-banner-main .banner-content .coin-img img{
+    position: relative;
+    z-index: 10;
+}
+/* star */
+
+.star-main {
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.star {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    position: absolute;
+
+    background-color: rgba(224, 167, 14, 0.8);
+    box-shadow: 0 0 40px 0 rgba(232, 192, 80, 0.5), 0 0 20px 0 rgba(232, 192, 80, 1);
+    
+    animation: glow 5s infinite;
+    z-index: -1;
+    /* position: relative; */
+}
+
+/* .star::before {
+    content: '\f005';
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 800;
+    color: #fff;
+    font-size: 10px;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.8));;
+  } */
+
+.star--medium {
+    width: 3px;
+    height: 3px;
+}
+
+/* .star--medium::before {
+    font-size: 14px;
+    font-weight: 400;
+  } */
+
+.star--big {
+    width: 5px;
+    height: 5px;
+    box-shadow: 0 0 40px 0 #fff, 0 0 20px 0 #fff, inset 0 0 4px #fff;
+}
+
+/* .star--big::before {
+    font-size: 18px;
+    font-weight: 800;
+    filter: drop-shadow(0px 0px 4px #fff);;
+  } */
+
+@keyframes glow {
+    0% {
+        opacity: 0.9;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+#particles-js{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#stats{
+    display: none;
+}
+/*
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Raleway', sans-serif;
+*/
 /************************** media-query **************************/
 
 @media only screen and (min-width: 1921px) and (max-width: 7368px) {}
