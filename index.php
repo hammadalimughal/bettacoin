@@ -8,7 +8,7 @@ $page = 'home';
         <div class="container z-index-adjustment">
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-12">
-                    <div class="banner-content">
+                    <div class="banner-content" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0">
                         <h1>get ultimate profit from <span>bettacoin</span></h1>
                         <div class="coin-img">
                             <img class="img-fluid" src="images/coin-animated.gif" alt="">
@@ -25,7 +25,7 @@ $page = 'home';
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-12">
-                    <div class="timer-wrapper">
+                    <div class="timer-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="0">
                         <div class="lauching-time">
                             <h4>launching on</h4>
                             <h3>july 1st 2022</h3>
@@ -60,17 +60,17 @@ $page = 'home';
                     <div class="alessandro-ramirez-cntnt">
                         <div class="row align-items-center">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="alessandro-ramirez-pic">
+                                <div class="alessandro-ramirez-pic" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="0">
                                     <img class="img-fluid" src="images/alessandro-ramirez-pic.png" alt="">
                                 </div>
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="alessandro-ramirez-txt">
-                                    <h4>alessandro ramirez</h4>
-                                    <p>Bettacoin is a very profitable cryptocurrency with an ecosystem designed to help
+                                    <h4 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="0">alessandro ramirez</h4>
+                                    <p data-aos="fade-left" data-aos-duration="2500" data-aos-delay="0">Bettacoin is a very profitable cryptocurrency with an ecosystem designed to help
                                         holders of other cryptocurrencies burn their supply and at the same time create
                                         token value. Bettacoin is one of a kind token</p>
-                                    <a class="read-more" href="javascript:;">read more</a>
+                                    <a data-aos="fade-up" data-aos-duration="3500" data-aos-delay="0" class="read-more" href="javascript:;">read more</a>
                                 </div>
                             </div>
                         </div>
@@ -86,8 +86,8 @@ $page = 'home';
                     <div class="row">
                         <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="get-ultimate-profit-txt">
-                                <h4>Get Ultimate Profit From Bettacoin</h4>
-                                <p>Bettacoin is a Polygon token designed for people who don’t want to waste their money
+                                <h4 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="0">Get Ultimate Profit From Bettacoin</h4>
+                                <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="0">Bettacoin is a Polygon token designed for people who don’t want to waste their money
                                     in etherium high gas fees. We also offer burns of other ethereum token supplies such
                                     as Shiba and Saitama so holders from both communities can benefit by investing in
                                     this token. Our roadmap shows real world applications such as a dating site, Ezspace
@@ -108,11 +108,11 @@ $page = 'home';
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-12">
                     <div class="road-map-content">
-                        <h4>road map</h4>
-                        <p>The mission is to interact with other cryptocurrencies’ ecosystems plus create a dating
+                        <h4 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="0">road map</h4>
+                        <p data-aos="fade-left" data-aos-duration="2500" data-aos-delay="0">The mission is to interact with other cryptocurrencies’ ecosystems plus create a dating
                             platform that will revolutionize that industry in a way never seen before</p>
                     </div>
-                    <div class="slider-road-map owl-theme owl-carousel">
+                    <div class="slider-road-map owl-theme owl-carousel" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="0">
                         <div class="item">
                             <div class="card-roadmap">
                                 <div class="head">
@@ -231,11 +231,11 @@ $page = 'home';
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="burn-perc-txt">
-                                    <h4>burn percentage</h4>
-                                    <p>Bettacoin is a very profitable cryptocurrency with an ecosystem designed to help
+                                    <h4 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="0">burn percentage</h4>
+                                    <p data-aos="fade-left" data-aos-duration="2500" data-aos-delay="0">Bettacoin is a very profitable cryptocurrency with an ecosystem designed to help
                                         holders of other cryptocurrencies burn their supply and at the same time create
                                         token value. Bettacoin is one of a kind token</p>
-                                    <a href="javascript:;">read more</a>
+                                    <a data-aos="fade-up" data-aos-duration="3500" data-aos-delay="0" href="javascript:;">read more</a>
                                 </div>
                             </div>
                         </div>
@@ -249,8 +249,8 @@ $page = 'home';
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-9 col-md-11 col-12">
                     <div class="contact-content">
-                        <h3>contact bettacoin</h3>
-                        <div class="form-contact">
+                        <h3 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="0">contact bettacoin</h3>
+                        <div class="form-contact" data-aos="zoom-in-down" data-aos-duration="2500" data-aos-delay="0">
                             <div class="input-field"><input type="text" placeholder="Name*"></div>
                             <div class="input-field"><input type="email" placeholder="Email*"></div>
                             <div class="input-field"><input type="text" placeholder="Phone*"></div>

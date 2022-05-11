@@ -156,7 +156,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 0 200px;
-    margin-top: -100px;
+    margin-top: -50px;
     z-index: 1;
 }
 
@@ -851,7 +851,13 @@ img {
 
 @media only screen and (min-width: 1366px) and (max-width: 1444px) {}
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .get-ultimate-profit-bettacoin .get-ultimate-profit-img{
+        top: -120px;
+        width: 65%;
+        right: 0;
+    }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
