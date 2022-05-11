@@ -19,7 +19,7 @@ $(document).ready(function () {
     $(`.nav-item .nav-link[href="${filename}"]`).addClass("active")
 })
 
-// starmain
+// banner coin bg animation 
 var wH = $(".star-main").height();
 var wW = $(".star-main").width();
 
@@ -32,23 +32,9 @@ var generateStars = function generateStars(n) {
         document.querySelector(".star-main").appendChild(div);
     }
 };
-
-
 generateStars(800);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// timer work
 function countdown() {
     let dayStr;
     let hourStr;
@@ -83,10 +69,6 @@ function countdown() {
     else{
         inputSec = (Math.floor((timeSpan % 60000) / 1000)).toString();
     }
-    // dayStr = (Math.floor(timeSpan / 86400000)).toString();
-    // hourStr = (Math.floor((timeSpan % 86400000) / 3600000)).toString();
-    // inputMin = (Math.floor((timeSpan % 3600000) / 60000)).toString();
-    // inputSec = (Math.floor((timeSpan % 60000) / 1000)).toString();
     $(".lauching-timer ul ").each((ind,item) => {
         $(item).html("")
     })
@@ -103,5 +85,23 @@ function countdown() {
         $(".seconds ul").append("<li>" + inputSec.substring(i, (i + 1)) + "</li>")
     }
 }
-
 setInterval(countdown, 1000);
+
+
+$('.slider-road-map').owlCarousel({
+    loop:true,
+    margin: 0,
+    nav:true,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
